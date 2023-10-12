@@ -34,7 +34,7 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 400px;
+    width: 380px;
     transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
     transform: translateY(0);
 }
