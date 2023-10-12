@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f7f7f7, #e3e3e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #007BFF;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: #fff;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Added box-shadow for carding effect */
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Added transform for hover effect */
+    transform: translateY(0);
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Add a subtle hover effect to lift the card */
+}
+
+h1 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+input[type="text"]:disabled,
+input[type="range"]:disabled,
+input[type="text"]:disabled + input[type="range"],
+input[type="range"]:disabled + input[type="text"] {
+    background-color: #f0f0f0;
+    color: #888;
+    border-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+input[type="text"]:focus,
+input[type="range"]:focus {
+    border-color: #007BFF;
+}
+
+input[type="text"]:invalid {
+    border-color: #ff0000;
+}
+
+input[type="range"] {
+    background: linear-gradient(to right, #007BFF, #fff);
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
